@@ -11,7 +11,18 @@ body {
   -moz-osx-font-smoothing: grayscale;
 }
 
-.clsName {
+.Btn {
+  background-color: white;
+  color: red;
+  margin: 10px;
+  width: 100px;
+  height: 40px;
+  border-radius: 20px;
+  border: 1px solid red;
+  cursor: pointer;
+}
+
+.Btn:active {
   background-color: red;
   color: white;
 }
