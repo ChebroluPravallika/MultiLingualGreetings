@@ -26,3 +26,22 @@ body {
   background-color: red;
   color: white;
 }
+
+.image {
+  height: 400px;
+}
+
+@media (max-width: 500px) {
+  .image {
+    height: 200px;
+  }
+  .heading {
+    font-size: 20px;
+    text-align: center;
+  }
+  .Btn {
+    width: 70px;
+    height: 40px;
+    margin: 5px;
+  }
+}
