@@ -47,12 +47,19 @@ class App extends Component {
         style={{
           display: 'flex',
           flexDirection: 'column',
-          justifyContent: 'center',
           alignItems: 'center',
         }}
       >
-        <h1>Multilingual Greetings</h1>
-        <ul style={{display: 'flex', flexDirection: 'row'}}>
+        <h1 className="heading">Multilingual Greetings</h1>
+        <ul
+          style={{
+            display: 'flex',
+            flexDirection: 'row',
+            alignItems: 'center',
+            justifyContent: 'center',
+            padding: '0px',
+          }}
+        >
           {languageGreetingsList.map(each => (
             <TabsList
               each={each}
@@ -62,7 +69,7 @@ class App extends Component {
           ))}
         </ul>
         <div>
-          <img src={image} alt={imageAlt} style={{height: '500px'}} />
+          <img src={image} alt={imageAlt} className="image" />
         </div>
       </div>
     )
